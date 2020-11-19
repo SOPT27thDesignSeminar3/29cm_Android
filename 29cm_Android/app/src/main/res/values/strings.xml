@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">29cm_Android</string>
+    <string name="home">HOME</string>
+    <string name="shop">SHOP</string>
+    <string name="tv">29TV</string>
+    <string name="weLove">WELOVE</string>
+    <string name="my">MY</string>
+
 </resources>
