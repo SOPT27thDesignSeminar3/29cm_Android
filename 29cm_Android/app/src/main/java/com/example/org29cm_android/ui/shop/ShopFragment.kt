@@ -108,32 +108,32 @@ class ShopFragment : Fragment() {
             ShoesData(
                 "타크트로이메",
                 "Solar-01-베이직 슬림 앵클 부츠",
-                43,
-                59000,
+                "43%",
+                "59,000won",
                 R.drawable.img_4,
                 false
             ),
             ShoesData(
                 "타크트로이메",
                 "Solar-01-베이직 슬림 앵클 부츠",
-                43,
-                59000,
+                "43%",
+                "59,000won",
                 R.drawable.img_4,
                 true
             ),
             ShoesData(
                 "타크트로이메",
                 "Solar-01-베이직 슬림 앵클 부츠",
-                43,
-                59000,
+                "43%",
+                "59,000won",
                 R.drawable.img_4,
                 false
             ),
             ShoesData(
                 "타크트로이메",
                 "Solar-01-베이직 슬림 앵클 부츠",
-                43,
-                59000,
+                "43%",
+                "59,000won",
                 R.drawable.img_4,
                 true
             )

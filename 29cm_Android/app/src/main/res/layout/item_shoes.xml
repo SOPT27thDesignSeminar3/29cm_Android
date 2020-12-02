@@ -54,11 +54,12 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_brand"
             tools:text="Solar-01-베이직 슬림 앵클 부츠" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/btn_heart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
             android:src="@drawable/selector_heart"
             isHeartChecked="@{item.bookmark}"
             app:layout_constraintBottom_toBottomOf="@+id/tv_brand"
@@ -72,6 +73,7 @@
             android:textColor="#ff4800"
             android:textSize="9sp"
             android:textStyle="normal"
+            android:text="@{item.discount}"
             android:layout_marginBottom="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tv_product"
@@ -85,10 +87,10 @@
             android:textColor="#ff4800"
             android:textSize="9sp"
             android:textStyle="normal"
+            android:text="@{item.price}"
             app:layout_constraintBottom_toBottomOf="@+id/tv_rate"
             app:layout_constraintStart_toEndOf="@+id/tv_rate"
             tools:text="59,000won" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

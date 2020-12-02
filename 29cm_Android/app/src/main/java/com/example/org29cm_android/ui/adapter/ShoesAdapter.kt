@@ -1,12 +1,14 @@
 package com.example.org29cm_android.ui.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.org29cm_android.data.domain.ShoesData
 import com.example.org29cm_android.databinding.ItemShoesBinding
 
+/**
+ * Created by 4z7l on 2020-12-02
+ */
 class ShoesAdapter : RecyclerView.Adapter<ShoesAdapter.ViewHolder>() {
 
     private var _data = mutableListOf<ShoesData>()
@@ -17,16 +19,10 @@ class ShoesAdapter : RecyclerView.Adapter<ShoesAdapter.ViewHolder>() {
             notifyDataSetChanged()
         }
 
-    inner class ViewHolder(private val binding: ItemShoesBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(private val binding: ItemShoesBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(item: ShoesData) {
             binding.item = item
-        }
-        fun onClick() {
-            binding.btnHeart.setOnClickListener {
-
-                it.isSelected = !it.isSelected
-                Log.e("SEULGI", "btnHeart:"+it.isSelected)
-            }
         }
     }
 
@@ -40,7 +36,5 @@ class ShoesAdapter : RecyclerView.Adapter<ShoesAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(_data[position])
-        holder.onClick()
     }
-
 }
