@@ -1,7 +1,7 @@
 package com.example.org29cm_android.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.org29cm_android.R
 import com.example.org29cm_android.ui.adapter.MainPagerAdapter
 import com.example.org29cm_android.util.addViewPagerListener
