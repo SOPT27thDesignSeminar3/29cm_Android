@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.org29cm_android.R
-import com.example.org29cm_android.data.HomeWomanItemData
+import com.example.org29cm_android.data.domain.HomeWomanItemData
 import com.example.org29cm_android.databinding.FragmentHomeWomanBinding
 import com.example.org29cm_android.ui.adapter.HomeWomanAdapter
 
@@ -82,7 +82,7 @@ class HomeWomanFragment : Fragment() {
             ),
             HomeWomanItemData(
                 R.drawable.img_home_woman,
-               "킨더살몬",
+                "킨더살몬",
                 "[FW20 ESSENTIAL] 캐시미어 Cashmere Single Coat Wood - brown",
                 "9% 268,945won",
                 R.drawable.ic_heart_red,

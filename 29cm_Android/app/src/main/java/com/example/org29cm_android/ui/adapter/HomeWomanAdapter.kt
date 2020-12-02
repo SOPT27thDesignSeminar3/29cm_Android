@@ -7,13 +7,13 @@ import android.widget.TextView
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.org29cm_android.R
-import com.example.org29cm_android.data.HomeWomanItemData
+import com.example.org29cm_android.data.domain.HomeWomanItemData
 
 /**
  * Created by SSong-develop by 2020-12-01
  */
 class HomeWomanAdapter : RecyclerView.Adapter<HomeWomanAdapter.VHolder>() {
-    var homeWomanItemList = mutableListOf<com.example.org29cm_android.data.HomeWomanItemData>()
+    var homeWomanItemList = mutableListOf<HomeWomanItemData>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = VHolder(
         LayoutInflater.from(parent.context).inflate(R.layout.item_list_home_woman, parent, false)
