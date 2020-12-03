@@ -1,13 +1,21 @@
 <resources>
     <string name="app_name">29cm_Android</string>
+
     <string name="home">HOME</string>
     <string name="shop">SHOP</string>
     <string name="tv">29TV</string>
     <string name="weLove">WELOVE</string>
     <string name="my">MY</string>
+
     <string name="all">ALL</string>
-    <string name="clothes">의류</string>
+
+    <!--HOME-->
     <string name="home_woman_subtitle">[FW20 ESSENTIAL] 캐시미어 Cashmere Single Coat Wood - brown</string>
     <string name="home_price_discount">9% 268,945won</string>
     <string name="home_title">킨더살몬</string>
+
+    <!--SHOP-->
+    <string name="clothes">의류</string>
+    <string name="bag">가방</string>
+    <string name="shoes">신발</string>
 </resources>

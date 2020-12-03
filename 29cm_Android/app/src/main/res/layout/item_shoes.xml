@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.org29cm_android.data.domain.ShoesData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/iv_product"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            tools:src="@drawable/img_4"
+            setImageSource="@{item.image}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="@{item.brand_name}"
+            app:layout_constraintEnd_toStartOf="@+id/btn_heart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_product"
+            tools:text="타크트로이메" />
+
+        <TextView
+            android:id="@+id/tv_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="#000000"
+            android:textSize="9sp"
+            android:textStyle="normal"
+            android:text="@{item.product_name}"
+            android:layout_marginHorizontal="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_brand"
+            tools:text="Solar-01-베이직 슬림 앵클 부츠" />
+
+        <ImageButton
+            android:id="@+id/btn_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/selector_heart"
+            isHeartChecked="@{item.bookmark}"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_brand"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_brand" />
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff4800"
+            android:textSize="9sp"
+            android:textStyle="normal"
+            android:text="@{item.discount}"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_product"
+            tools:text="43%" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="#ff4800"
+            android:textSize="9sp"
+            android:textStyle="normal"
+            android:text="@{item.price}"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_rate"
+            app:layout_constraintStart_toEndOf="@+id/tv_rate"
+            tools:text="59,000won" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

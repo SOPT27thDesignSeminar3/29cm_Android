@@ -1,4 +1,4 @@
-package com.example.org29cm_android.data
+package com.example.org29cm_android.data.domain
 
 /**
  * Created by SSong-develop on 2020-12-01
